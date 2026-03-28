@@ -15,17 +15,10 @@ int main() {
         }
     }
 
-    for(int i=0;i<N;i++) {
-        for(int j=0;j<2;j++) {
-            cout << jarak[i][j];
-        }
-        cout << endl;
-    }
-
     vector<int> dekat;
 
     for(int i=0;i<N-1;i++) {
-        for(int j=i+1;j<N;i++) {
+        for(int j=i+1;j<N;j++) {
             int x = pow(abs(jarak[j][0]-jarak[i][0]), D);
             int y = pow(abs(jarak[j][1]-jarak[i][1]), D);
             int temp = x + y;
